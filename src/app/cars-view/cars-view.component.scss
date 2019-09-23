@@ -2,6 +2,11 @@
     background-position: 50% 50%;
     background-size: cover;
     background-repeat: no-repeat;
+
+    cursor: pointer;
+    &:hover {
+        transform: scale(1.05);
+    }
 }
 
 .card-body {
