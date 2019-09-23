@@ -1,0 +1,19 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/scss/bootstrap.scss';
+
+
+.transition {
+    transition: 0.5s;
+}
+
+.fade {
+    display: block;
+    opacity: 0;
+    touch-action: none;
+    pointer-events: none;
+}
+.fade-in {
+    opacity: 1 !important;
+    touch-action: auto !important;
+    pointer-events: auto !important;
+}

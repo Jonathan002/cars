@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Cars</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+
+  <app-root></app-root>
+
+  <div id="remove-me" class="transition">
+      <style>
+        #remove-me * {
+          box-sizing: border-box !important;
+          margin: 0 !important;
+          padding: 0 !important;
+        }
+  
+        .animation {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+  
+          background-color: #fafafa;
+          width: 100vw;
+          height: 100vh;
+  
+          position: fixed;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          z-index: 1000000;
+        }
+  
+        .animation-img {
+          width: 160px;
+          height: auto;
+        }
+  
+        .font-style {
+          font-family: Arial !important;
+          font-weight: 100 !important;
+          font-size: 1.5em !important;
+          line-height: 1.2 !important;
+        }
+      </style>
+      <div class="animation">
+        <img class="animation-img" src="/assets/car-animation.gif">
+        <h2 class="font-style">Loading</h2>
+      </div>
+    </div>
+</body>
+
+</html>
