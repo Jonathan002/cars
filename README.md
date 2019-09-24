@@ -1,6 +1,6 @@
-# Cars
+# Cool Cars Code Challenge
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.4.
+This project was created for a code challenge: https://gist.github.com/HandsomeMedia/88ed4303fc22f29bf4a5e615e0bd8a6f
 
 ## Development server
 
@@ -25,3 +25,5 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
