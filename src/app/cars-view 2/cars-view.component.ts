@@ -10,10 +10,11 @@ import { ModalService } from '../modal.service';
 export class CarsViewComponent implements OnInit {
   cars = [];
   carSub;
-  
-  // componentWorker;
+  componentWorker;
   // imageApi = 'https://source.unsplash.com/random/';
-
+  imageApi(idx) {
+    return `https://source.unsplash.com/collection/${idx}/500x410`;
+  }
   anchorText = `Open Home Modal - Outlet: 'ng-router-app-wide-modal'`;
   constructor(
     private car: CarService,

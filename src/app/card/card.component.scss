@@ -1,0 +1,28 @@
+.card {
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    cursor: pointer;
+    // &:hover {
+    //     transform: scale(1.05);
+    // }
+}
+
+.card-body {
+    background-color: rgba(0,0,0,0.5);
+    color: #fff;
+    z-index: 10;
+}
+
+.content-placeholder {
+    animation: shimmer 5s linear 0s infinite forwards;
+    background: #d0d3da;
+    background-image: linear-gradient(
+      to right,
+      #d0d3da 0%,
+      #e9ebee 20%,
+      #d0d3da 40%,
+      #d0d3da 100%
+    );
+  }

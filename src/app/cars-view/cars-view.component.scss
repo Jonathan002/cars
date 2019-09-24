@@ -1,15 +1,19 @@
-.card {
-    background-position: 50% 50%;
-    background-size: cover;
-    background-repeat: no-repeat;
-
-    cursor: pointer;
-    &:hover {
-        transform: scale(1.05);
-    }
+.container {
+  max-width: initial;
 }
 
-.card-body {
-    background-color: rgba(0,0,0,0.5);
-    color: #fff;
+.container-size {
+  height: 205px;;
 }
+
+cdk-virtual-scroll-viewport {
+    height: calc(100vh - 86px - 2rem);
+    // padding-left: 15px;
+    // padding-right: 15px;
+  }
+
+  /deep/ .cdk-virtual-scroll-content-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+  }
+
