@@ -1,16 +1,14 @@
-<cdk-virtual-scroll-viewport [itemSize]="205 / 3" minBufferPx="300" maxBufferPx="400">
-  <ng-container *cdkVirtualFor="let car of cars; index as idx">
-    <!-- *ngIf="car['Cool Factor'] > 6" -->
-    <div class="container-size col-12 col-sm-6 col-md-4 p-2 animated fadeInUp">
+<div class="container m-auto">
+  <div class="row">
 
-      <app-card [car]="car" [idx]="idx"></app-card>
+    <ng-container *ngFor="let car of cars; index as idx">
+      <div *ngIf="car['Cool Factor'] > 6"
+        class="col-xs-12 col-sm-6 col-md-4 col-xl-3 p-1">
 
-      <!-- <div class="m-2" style="width: 100%;
-      height: 100px;
-      background-color: red;"> -->
-      <!-- </div> -->
+        <app-card [car]="car" [idx]="idx"></app-card>
 
-    </div>
+      </div>
+    </ng-container>
 
-  </ng-container>
-</cdk-virtual-scroll-viewport>
+  </div>
+</div>

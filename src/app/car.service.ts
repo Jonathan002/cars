@@ -2,30 +2,6 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
-// interface Car {
-//   "Year": "2018",
-//   "Make": "Cadillac", 
-//   "Model": "CT6", 
-//   "Styling": "6", 
-//   "Acceleration": "4", 
-//   "Handling": "5", 
-//   "Fun Factor": "4", 
-//   "Cool Factor": "4", 
-//   "Weekend Score Total": "23", 
-//   "Features": "9", 
-//   "Comfort": "8", 
-//   "Quality": "8", 
-//   "Practicality": "5", 
-//   "Value": "7", 
-//   "Daily Score Total": "37", 
-//   "Total Score": "60", 
-//   "Video Link": "23:47", 
-//   "Filmed At City": "Tustin", 
-//   "Filmed At Country": "California", 
-//   "Vehicle Country": "USA", 
-//   "id": 117
-// }
-
 interface Car {
   'Year': string,
   'Make': string, 

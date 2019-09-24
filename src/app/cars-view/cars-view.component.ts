@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { CarService } from '../car.service';
 import { ModalService } from '../modal.service';
 
@@ -7,37 +7,32 @@ import { ModalService } from '../modal.service';
   templateUrl: './cars-view.component.html',
   styleUrls: ['./cars-view.component.scss']
 })
-export class CarsViewComponent implements OnInit {
+export class CarsViewComponent implements OnInit, OnDestroy {
   cars = [];
   carSub;
   
-  // componentWorker;
-  // imageApi = 'https://source.unsplash.com/random/';
-
-  anchorText = `Open Home Modal - Outlet: 'ng-router-app-wide-modal'`;
   constructor(
     private car: CarService,
     public modal: ModalService,
   ) { }
 
   ngOnInit() {
-    // this.componentWorker = new Worker('./../../car-sorter.worker', { type: 'module' })
     this.carSub = this.car.getCars().subscribe(async (cars) => {
       this.cars = this.sort(cars);
     });
   }
 
-  private compareNumbers(a, b) {
+  private compareTotalScore(a, b) {
     return a['Total Score'] - b['Total Score'];
   }
 
   private sort(arr) {
-    const sorted = arr.sort(this.compareNumbers);
+    const sorted = arr.sort(this.compareTotalScore);
     this.car.carsSorted();
     return sorted;
   }
 
-  ngOnDestroY() {
+  ngOnDestroy() {
     this.carSub.unsubscribe();
   }
 

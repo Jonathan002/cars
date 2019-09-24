@@ -4,9 +4,9 @@
     background-repeat: no-repeat;
 
     cursor: pointer;
-    // &:hover {
-    //     transform: scale(1.05);
-    // }
+    &:hover {
+        transform: scale(1.05);
+    }
 }
 
 .card-body {
