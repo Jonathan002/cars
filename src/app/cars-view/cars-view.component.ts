@@ -23,11 +23,14 @@ export class CarsViewComponent implements OnInit, OnDestroy {
   }
 
   private compareTotalScore(a, b) {
-    return a['Total Score'] - b['Total Score'];
+    return b['Total Score'] - a['Total Score'];
   }
 
   private sort(arr) {
-    const sorted = arr.sort(this.compareTotalScore);
+    const sorted = arr.sort(this.compareTotalScore)
+                      .filter(x => x['Cool Factor'] > 6)
+                      .splice(0, 10);
+    console.log('log sorted', sorted);
     this.car.carsSorted();
     return sorted;
   }
