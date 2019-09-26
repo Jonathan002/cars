@@ -2,6 +2,9 @@
 
 This project was created for a code challenge: https://gist.github.com/HandsomeMedia/88ed4303fc22f29bf4a5e615e0bd8a6f
 
+Angular Stackblitz: https://stackblitz.com/github/Jonathan002/cars
+VanillaJs Fiddle: https://jsfiddle.net/Jonathan002/412dzxc3/3/
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
